@@ -10,7 +10,7 @@ module Resque
       #   Resque::Failure::Honeybadger.configure do |config|
       #     config.api_key = '505f2518c41866bb0be7ba434bb2b079'
       #   end
-      def self.configure
+      def self.configure(&block)
         ::Honeybadger.configure(&block)
       end
 
