@@ -1,3 +1,7 @@
+## Hacked shit up to work with Honeybadger
+
+* renamed to resque-honeybadger
+
 ## 0.2.0 (2012-09-07)
 
 * Changed API URL to: api.exceptional.io
