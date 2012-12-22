@@ -1,15 +1,6 @@
 module Resque
   module Failure
     class Honeybadger < Base
-      # Configures the failure backend. At a minimum you will need to set
-      # an api_key.
-      #
-      # @example Setting your API Key and enabling SSL:
-      #   Resque::Failure::Honeybadger.configure do |config|
-      #     config.api_key = '505f2518c41866bb0be7ba434bb2b079'
-      #   end
-      #
-      # If you already configured Honeybadger for your app, x§
       def self.configure(&block)
         ::Honeybadger.configure(&block)
       end
@@ -28,7 +19,6 @@ module Resque
           }
         )
       end
-
     end
   end
 end
