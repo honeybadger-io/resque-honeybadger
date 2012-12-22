@@ -1,4 +1,1 @@
-require 'resque'
-require 'honeybadger'
-
-require 'resque/failure/honeybadger'
+require "resque/failure/honeybadger"

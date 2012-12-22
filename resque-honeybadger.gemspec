@@ -1,8 +1,8 @@
 spec = Gem::Specification.new do |s|
   s.name              = 'resque-honeybadger'
-  s.version           = '1.0.1'
+  s.version           = '1.0.2'
   s.date              = Time.now.strftime('%Y-%m-%d')
-  s.summary           = 'A Resque failure backend for honeybadger.io'
+  s.summary           = 'A Resque failure backend for Honeybadger.'
   s.homepage          = 'http://github.com/henrik/resque-honeybadger'
   s.authors           = ['Luke Antins', 'Jacques Crocker', 'Henrik Nyh']
   s.email             = 'henrik@nyh.se'
@@ -16,7 +16,6 @@ spec = Gem::Specification.new do |s|
   s.add_dependency('honeybadger')
 
   s.description       = <<-EOL
-    resque-honeybadger provides a Resque failure backend that sends exceptions
-    raised by jobs to honeybadger.io.
+    Provides a Resque failure backend that sends exceptions raised by jobs to the Honeybadger service.
   EOL
 end

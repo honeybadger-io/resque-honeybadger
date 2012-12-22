@@ -1,3 +1,7 @@
+## 1.0.0 (2012-12-22)
+
+* Bundler rake tasks for gem management, like `rake release`.
+
 ## Hacked shit up to work with Honeybadger
 
 * renamed to resque-honeybadger

@@ -1,3 +1,6 @@
+require "resque"
+require "honeybadger"
+
 module Resque
   module Failure
     class Honeybadger < Base
