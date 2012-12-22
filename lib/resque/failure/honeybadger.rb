@@ -1,8 +1,6 @@
 module Resque
   module Failure
-    # A Resque failure backend that sends exception data to honeybadger.io
     class Honeybadger < Base
-
       # Configures the failure backend. At a minimum you will need to set
       # an api_key.
       #
@@ -10,13 +8,15 @@ module Resque
       #   Resque::Failure::Honeybadger.configure do |config|
       #     config.api_key = '505f2518c41866bb0be7ba434bb2b079'
       #   end
+      #
+      # If you already configured Honeybadger for your app, x§
       def self.configure(&block)
         ::Honeybadger.configure(&block)
       end
 
       def count
-        # We can't get the total # of errors from Hoptoad so we fake it
-        # by asking Resque how many errors it has seen.
+        # We don't want to ask Honeybadger for the total # of errors,
+        # so we fake it by asking Resque instead.
         Stat[:failed]
       end
 

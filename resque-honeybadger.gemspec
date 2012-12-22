@@ -1,6 +1,6 @@
 spec = Gem::Specification.new do |s|
   s.name              = 'resque-honeybadger'
-  s.version           = '0.2.0'
+  s.version           = '1.0.0'
   s.date              = Time.now.strftime('%Y-%m-%d')
   s.summary           = 'A Resque failure backend for honeybadger.io'
   s.homepage          = 'http://github.com/lantins/resque-honeybadger'
