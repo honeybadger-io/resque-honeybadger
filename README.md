@@ -58,6 +58,7 @@ Forked by
 ------
 
 Henrik Nyh :: <http://henrik.nyh.se> :: @henrik
+
 Jacques Crocker :: <http://railsjedi.com> :: @railsjedi
 
 
