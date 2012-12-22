@@ -1,11 +1,11 @@
 spec = Gem::Specification.new do |s|
   s.name              = 'resque-honeybadger'
-  s.version           = '1.0.0'
+  s.version           = '1.0.1'
   s.date              = Time.now.strftime('%Y-%m-%d')
   s.summary           = 'A Resque failure backend for honeybadger.io'
-  s.homepage          = 'http://github.com/lantins/resque-honeybadger'
-  s.authors           = ['Jacques Crocker']
-  s.email             = 'railsjedi@gmail.com'
+  s.homepage          = 'http://github.com/henrik/resque-honeybadger'
+  s.authors           = ['Luke Antins', 'Jacques Crocker', 'Henrik Nyh']
+  s.email             = 'henrik@nyh.se'
   s.has_rdoc          = false
 
   s.files             = %w(LICENSE Rakefile README.md HISTORY.md)
