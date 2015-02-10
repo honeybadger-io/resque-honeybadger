@@ -15,12 +15,24 @@ module Resque
       end
 
       def save
-        ::Honeybadger.notify_or_ignore(exception,
-          :parameters => {
-            :payload_class => payload['class'].to_s,
-            :payload_args => payload['args'].inspect
-          }
-        )
+        flush_if_v2 do
+          ::Honeybadger.notify_or_ignore(exception,
+            :parameters => {
+              :payload_class => payload['class'].to_s,
+              :payload_args => payload['args'].inspect
+            }
+          )
+        end
+      end
+
+      private
+
+      def flush_if_v2
+        if ::Honeybadger.respond_to?(:flush)
+          ::Honeybadger.flush { yield }
+        else
+          yield
+        end
       end
     end
   end
