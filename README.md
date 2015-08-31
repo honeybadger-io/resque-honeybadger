@@ -1,6 +1,10 @@
 resque-honeybadger
 ==================
 
+**DEPRECATED:** 1.x only. Resque support is included as of the [honeybadger](https://github.com/honeybadger-io/honeybadger-ruby) gem version 2.0.0.
+
+------------------------------------
+
 resque-honeybadger provides a [Resque][re] failure backend that sends exceptions raised by jobs to [honeybadger.io][hb].
 
 Install & Quick Start
